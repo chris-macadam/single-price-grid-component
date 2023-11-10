@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/single-price-grid-component-grid-and-flexbox-cmtoLRdEzN)
-- Live Site URL: [Finished Site](https://chris-macadam.github.io/product-preview-card-component/)
+- Live Site URL: [Finished Site](https://chris-macadam.github.io/single-price-grid-component/)
 
 ## Built with
 
