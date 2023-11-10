@@ -7,6 +7,7 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
+  - [Links](#links)
 - [Built with](#built-with)
 
 ## Overview
@@ -22,6 +23,11 @@ Users should be able to:
 
 ![Desktop screenshot](design/desktop-screenshot.jpg)
 ![Desktop screenshot](design/mobile-screenshot.jpg)
+
+### Links
+
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/single-price-grid-component-grid-and-flexbox-cmtoLRdEzN)
+- Live Site URL: [Finished Site](https://chris-macadam.github.io/product-preview-card-component/)
 
 ## Built with
 
