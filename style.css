@@ -1,0 +1,167 @@
+:root {
+  --nuetral-200: hsl(204, 43%, 93%);
+  --nuetral-300: hsl(218, 22%, 67%);
+  --primary-color-light: hsl(179, 62%, 46%);
+  --primary-color: hsl(179, 62%, 43%);
+  --primary-accent: hsl(71, 73%, 54%);
+  --primary-accent-active: hsl(71, 73%, 45%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-size: 16px;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  font-family: 'Karla', sans-serif;
+  line-height: 1.3;
+  color: var(--nuetral-300);
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-accent {
+  color: var(--primary-accent);
+}
+
+.background-accent {
+  background-color: var(--primary-accent);
+  color: white;
+}
+
+.background-primary {
+  background-color: var(--primary-color);
+  color: var(--nuetral-200);
+}
+
+.background-primary-light {
+  background-color: var(--primary-color-light);
+  color: var(--nuetral-200);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.price-card {
+  margin: 1rem;
+  width: 95%;
+  max-width: 350px;
+  background-color: white;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 1rem 0.1rem rgba(0, 0, 0, 0.126);
+}
+
+.price-card section {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.price-card section .title {
+  font-size: 1.2rem;
+}
+
+.price-card section .description {
+  line-height: 1.7;
+}
+
+.price-card .price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price-card .price-amount {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.price-card section button {
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0.25rem 1rem 0.1rem rgba(0, 0, 0, 0.126);
+  font-weight: 700;
+  font-family: inherit;
+  text-transform: none;
+}
+
+.price-card section button:hover {
+  background-color: var(--primary-accent-active);
+}
+
+.price-card ul {
+  list-style: none;
+  font-size: 0.8rem;
+}
+
+.price-card li {
+  padding: 0.1rem 0;
+}
+
+.price-card .subscription-section {
+  background-color: var(--primary-color);
+  color: var(--nuetral-200);
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+  .price-card {
+    width: 90%;
+    max-width: 720px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "title title"
+      "subscription why";
+   }
+
+   .price-card section {
+    padding: 2.5rem;
+   }
+
+   .price-card .title-section {
+    grid-area: title;
+   }
+
+   .price-card .title-section .title {
+    font-size: 1.75rem;
+   }
+
+   .price-card .title-section .subtitle {
+    font-size: 1.15rem;
+   }
+
+   .price-card .subscription-section {
+    grid-area: subscription;
+   }
+
+   .price-card .why-section {
+    grid-area: why;
+   }
+
+}
